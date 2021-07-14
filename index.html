@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="simple-grid.css">
+<style>
+    .body{
+        background-color: #003049;
+    }
+.home{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.small{
+    background-color: #d62828;
+    padding: 2em;
+    margin: 2em;
+    border: 5px solid;
+    border-color: #eae2b7;
+    grid-area: hader;
+    flex: 1;
+    
+}
+.medium{
+    background-color: #f77f00;
+    padding: 2em;
+    margin: 2em;
+    border: 5px solid;
+    border-color: #eae2b7;
+    grid-area: heaer;
+    flex: 1;
+}
+.large{
+    background-color: #fcbf49;
+    padding: 2em;
+    margin: 2em;
+    border: 5px solid;
+    border-color: #eae2b7;
+    grid-area: heade;
+    flex: 1;
+}
+.contact{
+    background-color: #eae2b7;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding-bottom: 1em;
+    border-radius: 1em;
+    border: 5px dotted;
+    border-color: #FF6347;
+    text-align: center;
+    content: icon;
+    
+    
+}
+.container {
+  display: grid;
+}
+@media(min-width:960px){
+    .piz{
+        display: flex;
+    }
+}
+
+</style>
+    <title>Perfect Pizza</title>
+</head>
+<body>
+    <div class="home">
+
+    <h1>Perfect Pizza</h1>
+
+    <div class="container piz">
+        <div class="row">
+          <div class="col-3 small">
+        
+            <h2>Small Pizza</h2>
+            <img src="small.jpg" width="150">
+            <h3>R30.00</h3>
+            <div>
+            Beef, Diced Tomato, Green Pepper, Jalapenos, Marinara Sauce, Mozzarella Cheese, Red Onion, Spring Onion
+            </div>
+          </div>
+          <div class="col-3 medium">
+            <h2>Medium Pizza</h2> 
+            <img src="medium.jpg" width="210">
+            <h3>R60.00</h3>
+            <div>
+             Marinara Sauce, Mozzarella Cheese, Pepperoni
+             </div>
+          </div>
+          <div class="col-3 large">
+            <h2>Large Pizza</h2> 
+            <img src="large.jpg" width="210">
+            <h3>R90.00</h3>
+            <div>
+            BBQ Sauce, Beef, Beef Sausage, Diced Macon
+            </div>
+        </div>
+        <div class="col-12 contact">
+            <h2>Contact Details</h2>
+            Contact us at: 011 340 1231 <br>
+                 info@Perfectpizza.co.za
+          </div>
+        </div>
+      </div>
+     
+</body>
+</html>
